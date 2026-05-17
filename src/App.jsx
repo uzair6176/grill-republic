@@ -314,21 +314,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20"
-      >
-        <span className="text-xs text-gray-400 uppercase tracking-widest">Scroll</span>
-        <div className="w-0.5 h-12 bg-white/20 overflow-hidden relative">
-          <motion.div 
-            className="w-full h-1/2 bg-orange-500 absolute top-0"
-            animate={{ y: ['-100%', '200%'] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
-      </motion.div>
+      
     </section>
   );
 };
